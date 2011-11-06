@@ -1,0 +1,36 @@
+#N canvas 504 106 523 466 10;
+#X floatatom 386 169 5 0 0 0 - - -;
+#X obj 71 174 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 94 173 On;
+#X obj 71 194 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 94 193 Off;
+#X obj 55 239 s on;
+#X obj 55 259 s off;
+#X obj 156 28 r on;
+#X obj 389 28 r off;
+#X obj 396 100 note_to_name;
+#X floatatom 386 289 5 0 0 0 - - -;
+#X obj 396 220 note_to_name;
+#X floatatom 386 409 5 0 0 0 - - -;
+#X obj 396 340 note_to_name;
+#X obj 176 55 mono_drone_note;
+#X obj 176 175 mono_drone_note;
+#X obj 176 295 mono_drone_note;
+#X text 12 182 Turn All;
+#X text 383 440 ObscureRobot.com;
+#X connect 0 0 9 0;
+#X connect 1 0 5 0;
+#X connect 3 0 6 0;
+#X connect 7 0 14 0;
+#X connect 7 0 15 0;
+#X connect 7 0 16 0;
+#X connect 8 0 14 1;
+#X connect 8 0 15 1;
+#X connect 8 0 16 1;
+#X connect 10 0 11 0;
+#X connect 12 0 13 0;
+#X connect 14 0 0 0;
+#X connect 15 0 10 0;
+#X connect 16 0 12 0;

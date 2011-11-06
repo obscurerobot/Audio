@@ -1,0 +1,26 @@
+#N canvas 22 544 262 173 10;
+#X obj 135 13 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 54 13 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 81 13 On;
+#X text 164 14 Off;
+#X obj 114 107 noteout;
+#X msg 54 73 64;
+#X msg 102 73 100;
+#X msg 162 71 0;
+#X msg 207 71 1;
+#X obj 54 37 t b b;
+#X obj 135 38 t b b;
+#X text 6 67 Note Number;
+#X text 137 141 ObscureRobot.com;
+#X connect 0 0 10 0;
+#X connect 1 0 9 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 1;
+#X connect 7 0 4 1;
+#X connect 8 0 4 2;
+#X connect 9 0 5 0;
+#X connect 9 1 6 0;
+#X connect 10 0 5 0;
+#X connect 10 1 7 0;
