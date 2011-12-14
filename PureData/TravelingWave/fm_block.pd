@@ -1,0 +1,17 @@
+#N canvas 1026 508 412 293 10;
+#X obj 158 233 outlet~;
+#X obj 158 190 osc~;
+#X obj 158 153 +~;
+#X obj 173 106 *~;
+#X obj 43 59 inlet~;
+#X obj 173 59 inlet~;
+#X text 13 37 Carrier Frequency;
+#X text 137 37 Modulator Frequency;
+#X text 273 37 Modulation Amount;
+#X obj 323 59 inlet;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;
+#X connect 5 0 3 0;
+#X connect 9 0 3 1;

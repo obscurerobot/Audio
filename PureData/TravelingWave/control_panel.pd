@@ -1,0 +1,65 @@
+#N canvas 1400 90 480 557 10;
+#X text 145 117 Carrier Note;
+#X obj 119 134 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3800 1;
+#X floatatom 259 135 5 0 0 0 - - -;
+#X obj 119 174 hsl 128 15 0 5000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2700 1;
+#X floatatom 259 175 6 0 0 0 - - -;
+#X obj 119 214 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5400 1;
+#X floatatom 259 215 7 0 0 0 - - -;
+#X obj 119 254 hsl 128 15 0 5000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8000 1;
+#X floatatom 259 255 7 0 0 0 - - -;
+#X obj 119 294 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 11400 1;
+#X floatatom 259 295 7 0 0 0 - - -;
+#X obj 119 334 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 10900 1;
+#X floatatom 259 335 7 0 0 0 - - -;
+#X text 125 157 FM Modulation Amount;
+#X text 145 197 Filter Input;
+#X text 145 237 Cutoff;
+#X text 145 277 Resonance;
+#X obj 119 374 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X floatatom 259 375 7 0 0 0 - - -;
+#X text 145 317 Filter Output;
+#X text 145 357 Main Output;
+#X obj 37 35 inlet;
+#X obj 77 35 inlet;
+#X obj 117 35 inlet;
+#X obj 157 35 inlet;
+#X obj 197 35 inlet;
+#X obj 237 35 inlet;
+#X obj 277 35 inlet;
+#X obj 37 475 outlet;
+#X obj 87 475 outlet;
+#X obj 137 475 outlet;
+#X obj 187 475 outlet;
+#X obj 237 475 outlet;
+#X obj 287 475 outlet;
+#X obj 337 475 outlet;
+#X connect 1 0 2 0;
+#X connect 2 0 28 0;
+#X connect 3 0 4 0;
+#X connect 4 0 29 0;
+#X connect 5 0 6 0;
+#X connect 6 0 30 0;
+#X connect 7 0 8 0;
+#X connect 8 0 31 0;
+#X connect 9 0 10 0;
+#X connect 10 0 32 0;
+#X connect 11 0 12 0;
+#X connect 12 0 33 0;
+#X connect 17 0 18 0;
+#X connect 18 0 34 0;
+#X connect 21 0 1 0;
+#X connect 22 0 3 0;
+#X connect 23 0 5 0;
+#X connect 24 0 7 0;
+#X connect 25 0 9 0;
+#X connect 26 0 11 0;
+#X connect 27 0 17 0;
+#X coords 0 -1 1 1 250 300 1 100 100;
