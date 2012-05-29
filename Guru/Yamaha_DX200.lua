@@ -1,3 +1,151 @@
+-- Version 0.01
+-- Obscure Robot / obscurerobot@gmail.com
+
+local group_scene = Group {
+  name = "Scene",
+  Parameter {
+    id = "scene_parameter",
+    name = "Scene",
+    type = "cc",
+    number = 3,
+  }
+}
+
+local group_lfo = Group {
+  name = "LFO",
+  Parameter {
+    id = "lfo_wave_parameter",
+    name = "Wave",
+    type = "cc",
+    number = 15,
+    items = {"Tri", "Saw", "Sqr", "Sine", "S&H"}
+  },
+  Parameter {
+    id = "lfo_pmd_parameter",
+    name = "Pitch Mod",
+    type = "cc",
+    number = 18
+  },
+  Parameter {
+    id = "lfo_fmd_parameter",
+    name = "Filter Mod",
+    type = "cc",
+    number = 19
+  },
+  Parameter {
+    id = "lfo_amd_parameter",
+    name = "Amp Mod",
+    type = "cc",
+    number = 80
+  },
+  Parameter {
+    id = "lfo_speed_parameter",
+    name = "Speed",
+    type = "cc",
+    number = 16,
+  }
+}
+
+local group_aeg = Group {
+  name = "AEG",
+  Parameter {
+    id = "aeg_attack_parameter",
+    name = "Attack",
+    type = "cc",
+    number = 73,
+  },
+  Parameter {
+    id = "aeg_decay_parameter",
+    name = "Decay",
+    type = "cc",
+    number = 75,
+  },
+  Parameter {
+    id = "aeg_sustain_parameter",
+    name = "Sustain",
+    type = "cc",
+    number = 31,
+  },
+  Parameter {
+    id = "aeg_release_parameter",
+    name = "Release",
+    type = "cc",
+    number = 72,
+  },
+}
+
+local group_feg = Group {
+  name = "FEG",
+  Parameter {
+    id = "feg_attack_parameter",
+    name = "Attack",
+    type = "cc",
+    number = 82,
+  },
+  Parameter {
+    id = "feg_decay_parameter",
+    name = "Decay",
+    type = "cc",
+    number = 83,
+  },
+  Parameter {
+    id = "feg_sustain_parameter",
+    name = "Sustain",
+    type = "cc",
+    number = 28,
+  },
+  Parameter {
+    id = "feg_release_parameter",
+    name = "Release",
+    type = "cc",
+    number = 29,
+  }
+}
+
+local group_common = Group {
+  name = "Common",
+  Parameter {
+    id = "common_key_a_parameter",
+    name = "Key Assign A",
+    type = "cc",
+    number = 8,
+  },
+  Parameter {
+    id = "common_key_b_parameter",
+    name = "Key Assign B",
+    type = "cc",
+    number = 9,
+  },
+  Parameter {
+    id = "common_portamento_parameter",
+    name = "Portamento",
+    type = "cc",
+    number = 5,
+  },
+}
+
+local group_algorithm = Group {
+  name = "Algorithm",
+  Parameter {
+    id = "algorithm_parameter",
+    name = "Algorithm",
+    type = "cc",
+    number = 33,
+    default_value = 25,
+    max_value = 31
+  }
+}
+
+local group_noise_osc = Group {
+  name = "Noise",
+  Parameter {
+    id = "noise_type_parameter",
+    name = "Type",
+    type = "cc",
+    number = 51
+  }
+}
+
 local group_vcf = Group {
   name = "VCF",
   Parameter {
@@ -12,7 +160,7 @@ local group_vcf = Group {
     name = "Type",
     type = "cc",
     number = 59,
-    items = {"24dB LPF", "18dB LPF", "12dB LPF", "BPF", "HPF", "BEF"},
+    items = {"24dB", "18dB", "12dB", "BPF", "HPF", "BEF"},
   },
   Parameter {
     id = "vcf_resonance_parameter",
@@ -154,13 +302,20 @@ local group_misc = Group {
 }
 
 return SynthDefinition {
-  name = "Yamaha DX-200 v0.01",
+  name = "Yamaha DX-200",
   author = "ObscureRobot [obscurerobot@gmail.com]",
   Section {
     group_vcf,
     group_distortion,
     group_effect,
     group_mixer,
-    group_misc
+    group_misc,
+    group_scene,
+    group_lfo,
+    group_aeg,
+    group_feg,
+    group_common,
+    group_algorithm,
+    group_noise_osc       
   }
 }
