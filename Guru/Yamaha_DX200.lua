@@ -1,4 +1,4 @@
--- Version 0.01
+-- Version Alpha 0.01
 -- Obscure Robot / obscurerobot@gmail.com
 
 local group_scene = Group {
@@ -1364,7 +1364,7 @@ local group_dx7_op1 = Group {
 }
 
 return SynthDefinition {
-  name = "Yamaha DX-200",
+  name = "Yamaha DX-200 (Alpha)",
   author = "ObscureRobot [obscurerobot@gmail.com]",
   content_height = 800,
   Section {
